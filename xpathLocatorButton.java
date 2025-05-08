@@ -11,7 +11,6 @@ public class xpathLocatorButton {
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		driver.findElement(By.xpath("//input[@placeholder=\"Username\"]")).sendKeys("rahul");
 		driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
-		driver.findElement(By.className("signInBtn")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
 		
